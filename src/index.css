@@ -1,0 +1,136 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --pink-50: #fff5f7;
+  --pink-100: #ffe4ea;
+  --pink-200: #ffc5d3;
+  --pink-300: #ff9ab5;
+  --pink-400: #f7698a;
+  --pink-500: #e84472;
+  --pink-600: #c7295a;
+  --cream-50: #fffdf8;
+  --cream-100: #fef8ec;
+  --cream-200: #faefd6;
+  --gold: #c9975a;
+  --text-dark: #1a0a10;
+  --text-mid: #5c3047;
+  --text-soft: #9b6075;
+  --shadow-sm: 0 2px 12px rgba(200,80,100,0.08);
+  --shadow-md: 0 8px 32px rgba(200,80,100,0.13);
+  --shadow-lg: 0 20px 60px rgba(200,80,100,0.18);
+  --radius: 16px;
+  --radius-sm: 8px;
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+
+  --bg: var(--cream-50);
+  --bg2: var(--cream-100);
+  --bg3: var(--cream-200);
+  --surface: #ffffff;
+  --border: rgba(220,130,155,0.2);
+  --text1: var(--text-dark);
+  --text2: var(--text-mid);
+  --text3: var(--text-soft);
+  --navbar-bg: rgba(255,253,248,0.88);
+}
+
+[data-theme="dark"] {
+  --bg: #1a0a10;
+  --bg2: #231018;
+  --bg3: #2e1520;
+  --surface: #2a1218;
+  --border: rgba(220,130,155,0.15);
+  --text1: #ffeef3;
+  --text2: #f0bece;
+  --text3: #c48a9a;
+  --navbar-bg: rgba(26,10,16,0.92);
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.4);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text1);
+  transition: background var(--transition), color var(--transition);
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4 { font-family: 'Cormorant Garamond', serif; }
+
+::selection { background: var(--pink-200); color: var(--pink-600); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--pink-300); border-radius: 3px; }
+
+/* Section spacing */
+section { padding: 100px 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.section-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--pink-500);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  color: var(--text1);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.section-title em { font-style: italic; color: var(--pink-500); }
+
+/* Scroll-reveal animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50%      { transform: translateY(-8px); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Elements start hidden, JS adds .is-visible to trigger animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* Hero elements animate immediately on load (no scroll needed) */
+.hero-reveal { animation: fadeUp 0.7s ease both; }
+.hero-delay-1 { animation-delay: 0.1s; }
+.hero-delay-2 { animation-delay: 0.2s; }
+.hero-delay-3 { animation-delay: 0.3s; }
+.hero-delay-4 { animation-delay: 0.4s; }
