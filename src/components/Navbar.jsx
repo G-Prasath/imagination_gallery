@@ -34,7 +34,7 @@ export default function Navbar({ dark, toggleTheme }) {
          <img src="/ImaginationGalleryLogos.png" alt="logo" className="w-10" />
           <span className="font-[Cormorant_Garamond] text-2xl font-semibold
                            text-dark-900 dark:text-pink-50 transition-colors">
-            Imagination<span className="text-pink-500">Gallery</span>
+            <span className="text-pink-500">Imagination Gallery</span>
           </span>
         </a>
 
