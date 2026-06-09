@@ -11,10 +11,10 @@
   --color-cream-50:  #fffdf8;
   --color-cream-100: #fef8ec;
   --color-cream-200: #faefd6;
-  --color-dark-900:  #1a0a10;
-  --color-dark-800:  #231018;
-  --color-dark-700:  #2e1520;
-  --color-dark-600:  #2a1218;
+  --color-dark-900:  #000000;
+  --color-dark-800:  #000000;
+  --color-dark-700:  #000000;
+  --color-dark-600:  #000000;
 }
 
 @keyframes float {

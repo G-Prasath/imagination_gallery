@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full
-                      grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-20">
+                      grid grid-cols-1 gap-16 items-center py-20">
 
         {/* ── Left text ── */}
         <div>
@@ -66,7 +66,7 @@ export default function Hero() {
                                transition-all duration-300
                                hover:border-pink-400 hover:text-pink-500
                                hover:bg-pink-50 dark:hover:bg-dark-700">
-              Get in Touch
+              Let's Connect
             </button>
           </div>
 
@@ -81,9 +81,8 @@ export default function Hero() {
         </div>
 
         {/* ── Right photo grid ── */}
-        <div className="hero-anim hero-d2 flex justify-center">
+        {/* <div className="hero-anim hero-d2 flex justify-center">
           <div className="grid grid-cols-2 gap-3 w-full max-w-[340px]">
-            {/* Tall card */}
             <div className="row-span-2 rounded-2xl overflow-hidden
                             bg-white dark:bg-dark-600
                             border border-pink-200/20 dark:border-pink-600/15
@@ -114,7 +113,7 @@ export default function Hero() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
