@@ -49,7 +49,7 @@ export default function About() {
                             dark:from-dark-700 dark:to-dark-800
                             shadow-[0_20px_60px_rgba(200,80,100,0.16)]"
             >
-              <video
+              {/* <video
                 className="w-full h-full object-cover"
                 autoPlay
                 muted
@@ -58,10 +58,11 @@ export default function About() {
               >
                 <source src="/about_video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
+               <img src="/about_us.png" alt="logo"  />
             </div>
             {/* Accent */}
-            <div
+            {/* <div
               className="absolute -bottom-4 -right-4 w-[52%] aspect-square rounded-[20px]
                             bg-white dark:bg-dark-600
                             flex items-center justify-center text-4xl
@@ -69,7 +70,7 @@ export default function About() {
                             border-4 border-cream-100 dark:border-dark-800"
             >
               <img src="/about_us.png" alt="logo"  />
-            </div>
+            </div> */}
           </div>
 
           {/* ── Text ── */}
