@@ -1,4 +1,4 @@
-const ORDER_EMAIL = "orders@photostudio.com";
+const ORDER_EMAIL = "imaginationgallery2025@gmail.com";
 
 // const SERVICES = [
 //   { id:1, emoji:"/services/CROSSWORD NAME FRAME.jpg", name:"Polaroids & Photocards",     sizes:"12×16, 16×20, 24×36 in",  price:"₹12", original:"₹850",  discount:"30% OFF", badge:"Best Seller" },
@@ -91,7 +91,7 @@ export default function Services({ showToast }) {
   const handleOrder = (item) => {
     const sub  = encodeURIComponent(`Order Enquiry: ${item.name}`);
     const body = encodeURIComponent(
-      `Hi PixelBloom Team,\n\nI'd like to order:\n\nProduct: ${item.name}\nSize: ${item.sizes || "Default"}\nPrice: ${item.price}\n\nPlease contact me with further details.\n\nThank you!`
+      `Hi ImaginationGallery Team,\n\nI'd like to order:\n\nProduct: ${item.name}\nSize: ${item.sizes || "Default"}\nPrice: ${item.price}\n\nPlease contact me with further details.\n\nThank you!`
     );
     window.location.href = `mailto:${ORDER_EMAIL}?subject=${sub}&body=${body}`;
     showToast("📬 Order email opened! We'll contact you soon.");
