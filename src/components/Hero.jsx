@@ -35,20 +35,19 @@ export default function Hero() {
                           text-pink-600 dark:text-pink-300
                           px-4 py-1.5 rounded-full text-[11px] font-medium tracking-widest uppercase">
             <span className="pulse-dot"/>
-            Premium Photo Printing
+            Customised Gifts
           </div>
 
           <h1 className="hero-anim hero-d1 font-[Cormorant_Garamond] font-light leading-[1.1] mb-5
                          text-[clamp(2.6rem,5vw,4.4rem)]
                          text-dark-900 dark:text-pink-50">
-            Your Memories,
-            <em className="block italic text-pink-500">Beautifully Printed</em>
+            Your Imagination,
+            <em className="block italic text-pink-500">Beautifully Crafted</em>
           </h1>
 
           <p className="hero-anim hero-d2 text-base leading-[1.8] mb-9 max-w-md
                         text-pink-900/60 dark:text-pink-200/70">
-            From cherished portraits to grand canvas art — we bring your photos to life
-            with stunning quality and vibrant detail.
+            From cherished Polaroids to attractive custom frames, we turn your imagination into reality with unique, personalized gifts that create lasting memories.
           </p>
 
           <div className="hero-anim hero-d3 flex flex-wrap gap-3.5 mb-10">
@@ -72,7 +71,7 @@ export default function Hero() {
           </div>
 
           <div className="hero-anim hero-d4 flex flex-wrap gap-7">
-            {[["5k+","Happy Customers"],["50+","Print Styles"],["48h","Fast Delivery"]].map(([n,l]) => (
+            {[["2k+","Happy Customers"],["50+","Print Styles"],["48h","Fast Delivery"]].map(([n,l]) => (
               <div key={l}>
                 <div className="font-[Cormorant_Garamond] text-[2rem] font-semibold text-pink-500 leading-none">{n}</div>
                 <div className="text-xs text-pink-900/50 dark:text-pink-400/60 mt-1">{l}</div>

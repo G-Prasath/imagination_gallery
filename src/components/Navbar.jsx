@@ -30,18 +30,11 @@ export default function Navbar({ dark, toggleTheme }) {
 
         {/* Logo */}
         <a href="#home" onClick={e => { e.preventDefault(); goto("home"); }}
-           className="flex items-center gap-2.5 no-underline group">
-          <div className="logo-float w-9 h-9 rounded-xl bg-gradient-to-br from-pink-400 to-pink-600
-                          flex items-center justify-center shadow-[0_4px_14px_rgba(232,68,114,0.35)]">
-            <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
-                       10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5
-                       1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-            </svg>
-          </div>
+           className="flex items-center gap-y-2.5 gap-x-2 no-underline group">
+         <img src="/ImaginationGalleryLogos.png" alt="logo" className="w-10" />
           <span className="font-[Cormorant_Garamond] text-2xl font-semibold
                            text-dark-900 dark:text-pink-50 transition-colors">
-            Pixel<span className="text-pink-500">Bloom</span>
+            Imagination<span className="text-pink-500">Gallery</span>
           </span>
         </a>
 

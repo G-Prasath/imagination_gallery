@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const ORDER_EMAIL = "orders@photostudio.com";
+const ORDER_EMAIL = "imaginationgallery2025@gmail.com";
 
 const CONTACT_ITEMS = [
-  { icon: "📍", label: "Location",  value: "123 Bloom Street, Chennai, Tamil Nadu", href: "https://maps.google.com" },
-  { icon: "📧", label: "Email",     value: "orders@photostudio.com",                href: `mailto:${ORDER_EMAIL}` },
-  { icon: "📸", label: "Instagram", value: "@pixelbloom.studio",                    href: "https://instagram.com" },
+  { icon: "📍", label: "Location",  value: "Chennai, Tamil Nadu", href: "" },
+  { icon: "📧", label: "Email",     value: "imaginationgallery2025@gmail.com",                href: `mailto:${ORDER_EMAIL}` },
+  { icon: "📸", label: "Instagram", value: "@imaginationgallery",                    href: "https://www.instagram.com/imaginationgallery2026/" },
 ];
 
 const INPUT_CLS = [
@@ -49,11 +49,11 @@ export default function Contact({ showToast }) {
         {/* Header */}
         <div className="text-center mb-14">
           <p className="reveal font-body text-[11px] font-medium tracking-[3px] uppercase text-pink-500 mb-3">
-            Get In Touch
+            Let's Connect
           </p>
           <h2 className="reveal reveal-d1 font-[Cormorant_Garamond] font-light
                          text-[clamp(1.8rem,3vw,2.8rem)] text-dark-900 dark:text-pink-50">
-            Let's create something <em className="italic text-pink-500">beautiful</em>
+            Let's create something <em className="italic text-pink-500">Memorable</em>
           </h2>
         </div>
 
@@ -63,11 +63,10 @@ export default function Contact({ showToast }) {
           <div className="reveal">
             <h3 className="font-[Cormorant_Garamond] text-2xl font-light mb-3
                            text-dark-900 dark:text-pink-50">
-              We'd love to hear from you
+              We'd love to hear your imaginations
             </h3>
             <p className="text-sm leading-[1.85] mb-8 text-pink-900/55 dark:text-pink-200/60">
-              Have a special project in mind? Custom bulk orders? Or simply want to enquire —
-              we're just a message away. Our team responds within 24 hours.
+              Whether it's a personalized gift, a cherished memory, or a unique creation you've imagined, we're here to transform it into something meaningful.
             </p>
             <div className="flex flex-col gap-3">
               {CONTACT_ITEMS.map((c, i) => (
@@ -118,7 +117,7 @@ export default function Contact({ showToast }) {
               <label className="text-[11px] font-medium tracking-wide uppercase
                                 text-pink-900/60 dark:text-pink-200/70">Message *</label>
               <textarea className={`${INPUT_CLS} min-h-[120px] resize-y`}
-                        name="message" placeholder="Tell us about your project or order..."
+                        name="message" placeholder="Tell us about your idea, special occasion, or dream gift..."
                         value={form.message} onChange={chg} required />
             </div>
             <button type="submit" disabled={sending}

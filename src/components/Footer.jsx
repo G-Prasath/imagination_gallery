@@ -6,10 +6,10 @@ export default function Footer() {
                        bg-cream-200 dark:bg-dark-700">
       <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
         <div className="font-[Cormorant_Garamond] text-xl text-pink-900/70 dark:text-pink-200">
-          Pixel<span className="text-pink-500">Bloom</span>
+          Imagination<span className="text-pink-500">Gallery</span>
         </div>
         <p className="text-xs text-pink-900/45 dark:text-pink-400/55">
-          © {new Date().getFullYear()} PixelBloom Studio. All rights reserved.
+          © {new Date().getFullYear()} Imagination Gallery. All rights reserved.
         </p>
         <div className="flex gap-5">
           {["home","services","contact"].map(id => (
