@@ -110,7 +110,7 @@ export default function Contact({ showToast }) {
             <div className="flex flex-col gap-1.5">
               <label className="text-[11px] font-medium tracking-wide uppercase
                                 text-pink-900/60 dark:text-pink-200/70">Phone (optional)</label>
-              <input className={INPUT_CLS} type="tel" name="phone" placeholder="+91 98765 43210"
+              <input className={INPUT_CLS} type="tel" name="phone" placeholder="+91 12345 12345"
                      value={form.phone} onChange={chg} />
             </div>
             <div className="flex flex-col gap-1.5">
