@@ -13,6 +13,8 @@ const ORDER_EMAIL = "imaginationgallery2025@gmail.com";
 
 const SERVICES = [
   {id: 19, emoji: "/services/service-19.jpg", name: "Customisied Photo Magazine", price: "₹799", badge:"New"},
+  {id: 20, emoji: "/services/service-20.jpg", name: "Wall Posters", price: "₹40", badge:"New"},
+
 
   {id: 1, emoji: "/services/service-1.jpg", name: "Polaroids & Photocards", price: "₹12", badge:"Premium"},
   {id: 2, emoji: "/services/service-2.jpg", name: "customized collage frames", price: "₹649", badge:"Best Seller"},
